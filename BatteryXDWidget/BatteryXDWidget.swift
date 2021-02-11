@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> BatteryEntry {
-        BatteryEntry(date: Date())
+        BatteryEntry(date: Date(), batteryLevel: 0.85, batteryCharging: false, batteryState: .unplugged)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (BatteryEntry) -> ()) {
