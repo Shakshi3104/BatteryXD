@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 @main
 struct BatteryXDApp: App {
@@ -22,6 +23,8 @@ struct BatteryXDApp: App {
             case .active:
                 print("scenePhase: active")
                 batteryState.startBatteryMonitoring()
+                // reload widget
+                WidgetCenter.shared.reloadAllTimelines()
             case .inactive:
                 print("scenePhase: inactive")
                 batteryState.stopBatteryMonitoring()

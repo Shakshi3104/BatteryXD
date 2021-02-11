@@ -13,16 +13,10 @@ struct ContentView: View {
     @EnvironmentObject var batteryState: BatteryState
     
     var body: some View {
-        VStack {
             ZStack {
                 BatteryRing(batteryLevel: batteryState.batteryLevel ?? 0)
                 BatteryFace(batteryLevel: batteryState.batteryLevel ?? 0, batteryCharging: batteryState.batteryCharging ?? false)
             }
-            
-            Text("\(Int((batteryState.batteryLevel ?? 0) * 100))%")
-                .font(Font.system(.title, design: .rounded))
-                .padding(.vertical)
-        }
     }
 }
 
