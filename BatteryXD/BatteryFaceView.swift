@@ -94,10 +94,10 @@ struct BatteryFace: View {
     
     var body: some View {
         ZStack {
-            if batteryCharging || batteryLevel > 0.8 {
+            if batteryCharging || batteryLevel >= 0.8 {
                 BatterySmileFace()
             }
-            else if batteryLevel > 0.3 {
+            else if batteryLevel >= 0.3 {
                 BatteryNormalFace()
             }
             else {
