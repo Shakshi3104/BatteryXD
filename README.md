@@ -1,4 +1,4 @@
-#  Battery XD
+# Battery XD
 
 Battery XD is like the default battery widget, but cute •ᴗ•
 
