@@ -11,6 +11,8 @@
 		CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928C25D4ABFD00141D91 /* ContentView.swift */; };
 		CEE4928F25D4ABFE00141D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4928E25D4ABFE00141D91 /* Assets.xcassets */; };
 		CEE4929225D4ABFE00141D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4929125D4ABFE00141D91 /* Preview Assets.xcassets */; };
+		CEE4929C25D4AC3900141D91 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
+		CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929B25D4AC3800141D91 /* BatteryState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		CEE4928E25D4ABFE00141D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE4929125D4ABFE00141D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE4929325D4ABFE00141D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryFaceView.swift; sourceTree = "<group>"; };
+		CEE4929B25D4AC3800141D91 /* BatteryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
+		CEE4929F25D4AC4B00141D91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 		CEE4927E25D4ABFD00141D91 = {
 			isa = PBXGroup;
 			children = (
+				CEE4929F25D4AC4B00141D91 /* README.md */,
 				CEE4928925D4ABFD00141D91 /* BatteryXD */,
 				CEE4928825D4ABFD00141D91 /* Products */,
 			);
@@ -52,6 +58,8 @@
 		CEE4928925D4ABFD00141D91 /* BatteryXD */ = {
 			isa = PBXGroup;
 			children = (
+				CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */,
+				CEE4929B25D4AC3800141D91 /* BatteryState.swift */,
 				CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */,
 				CEE4928C25D4ABFD00141D91 /* ContentView.swift */,
 				CEE4928E25D4ABFE00141D91 /* Assets.xcassets */,
@@ -138,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE4929C25D4AC3900141D91 /* BatteryFaceView.swift in Sources */,
+				CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */,
 				CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */,
 				CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */,
 			);
