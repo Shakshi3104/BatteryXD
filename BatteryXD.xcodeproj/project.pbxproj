@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7982C225D4CE1A00098325 /* BatteryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7982B825D4CCA300098325 /* BatteryEntry.swift */; };
+		CE7982C725D4CE2300098325 /* BatteryXDWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */; };
+		CE7982D425D4CE2F00098325 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
+		CE7982D525D4CE2F00098325 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
 		CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */; };
 		CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928C25D4ABFD00141D91 /* ContentView.swift */; };
 		CEE4928F25D4ABFE00141D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4928E25D4ABFE00141D91 /* Assets.xcassets */; };
@@ -14,9 +18,39 @@
 		CEE4929C25D4AC3900141D91 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
 		CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929B25D4AC3800141D91 /* BatteryState.swift */; };
 		CEE492A225D4B11D00141D91 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
+		CEE492E425D4CBB700141D91 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE492AD25D4CA9400141D91 /* WidgetKit.framework */; };
+		CEE492E525D4CBB700141D91 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE492AF25D4CA9400141D91 /* SwiftUI.framework */; };
+		CEE492E825D4CBB700141D91 /* BatteryXDWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492E725D4CBB700141D91 /* BatteryXDWidget.swift */; };
+		CEE492EA25D4CBB900141D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE492E925D4CBB900141D91 /* Assets.xcassets */; };
+		CEE492EE25D4CBB900141D91 /* BatteryXDWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEE492E325D4CBB700141D91 /* BatteryXDWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEE492EC25D4CBB900141D91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE4927F25D4ABFD00141D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE492E225D4CBB700141D91;
+			remoteInfo = BatteryXDWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE492C125D4CA9600141D91 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEE492EE25D4CBB900141D91 /* BatteryXDWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE7982B825D4CCA300098325 /* BatteryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEntry.swift; sourceTree = "<group>"; };
 		CEE4928725D4ABFD00141D91 /* BatteryXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDApp.swift; sourceTree = "<group>"; };
 		CEE4928C25D4ABFD00141D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +62,14 @@
 		CEE4929F25D4AC4B00141D91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEE492A125D4B11D00141D91 /* BatteryRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryRingView.swift; sourceTree = "<group>"; };
 		CEE492A425D4C63900141D91 /* BatteryXD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryXD.entitlements; sourceTree = "<group>"; };
+		CEE492AD25D4CA9400141D91 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CEE492AF25D4CA9400141D91 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CEE492BD25D4CA9600141D91 /* BatteryXDWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryXDWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CEE492E325D4CBB700141D91 /* BatteryXDWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BatteryXDWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE492E725D4CBB700141D91 /* BatteryXDWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDWidget.swift; sourceTree = "<group>"; };
+		CEE492E925D4CBB900141D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE492EB25D4CBB900141D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,14 +80,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE492E025D4CBB700141D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE492E525D4CBB700141D91 /* SwiftUI.framework in Frameworks */,
+				CEE492E425D4CBB700141D91 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CEE4927E25D4ABFD00141D91 = {
 			isa = PBXGroup;
 			children = (
+				CEE492BD25D4CA9600141D91 /* BatteryXDWidgetExtension.entitlements */,
 				CEE4929F25D4AC4B00141D91 /* README.md */,
 				CEE4928925D4ABFD00141D91 /* BatteryXD */,
+				CEE492E625D4CBB700141D91 /* BatteryXDWidget */,
+				CEE492AC25D4CA9400141D91 /* Frameworks */,
 				CEE4928825D4ABFD00141D91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE4928725D4ABFD00141D91 /* BatteryXD.app */,
+				CEE492E325D4CBB700141D91 /* BatteryXDWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,13 +118,13 @@
 			children = (
 				CEE492A425D4C63900141D91 /* BatteryXD.entitlements */,
 				CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */,
+				CEE492A125D4B11D00141D91 /* BatteryRingView.swift */,
 				CEE4929B25D4AC3800141D91 /* BatteryState.swift */,
 				CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */,
 				CEE4928C25D4ABFD00141D91 /* ContentView.swift */,
 				CEE4928E25D4ABFE00141D91 /* Assets.xcassets */,
 				CEE4929325D4ABFE00141D91 /* Info.plist */,
 				CEE4929025D4ABFE00141D91 /* Preview Content */,
-				CEE492A125D4B11D00141D91 /* BatteryRingView.swift */,
 			);
 			path = BatteryXD;
 			sourceTree = "<group>";
@@ -82,6 +137,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CEE492AC25D4CA9400141D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE492AD25D4CA9400141D91 /* WidgetKit.framework */,
+				CEE492AF25D4CA9400141D91 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE492E625D4CBB700141D91 /* BatteryXDWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CEE492E725D4CBB700141D91 /* BatteryXDWidget.swift */,
+				CEE492E925D4CBB900141D91 /* Assets.xcassets */,
+				CEE492EB25D4CBB900141D91 /* Info.plist */,
+				CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */,
+				CE7982B825D4CCA300098325 /* BatteryEntry.swift */,
+			);
+			path = BatteryXDWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,15 +168,34 @@
 				CEE4928325D4ABFD00141D91 /* Sources */,
 				CEE4928425D4ABFD00141D91 /* Frameworks */,
 				CEE4928525D4ABFD00141D91 /* Resources */,
+				CEE492C125D4CA9600141D91 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEE492ED25D4CBB900141D91 /* PBXTargetDependency */,
 			);
 			name = BatteryXD;
 			productName = BatteryXD;
 			productReference = CEE4928725D4ABFD00141D91 /* BatteryXD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEE492E225D4CBB700141D91 /* BatteryXDWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE492EF25D4CBB900141D91 /* Build configuration list for PBXNativeTarget "BatteryXDWidgetExtension" */;
+			buildPhases = (
+				CEE492DF25D4CBB700141D91 /* Sources */,
+				CEE492E025D4CBB700141D91 /* Frameworks */,
+				CEE492E125D4CBB700141D91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryXDWidgetExtension;
+			productName = BatteryXDWidgetExtension;
+			productReference = CEE492E325D4CBB700141D91 /* BatteryXDWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -112,6 +207,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CEE4928625D4ABFD00141D91 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CEE492E225D4CBB700141D91 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -130,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				CEE4928625D4ABFD00141D91 /* BatteryXD */,
+				CEE492E225D4CBB700141D91 /* BatteryXDWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +240,14 @@
 			files = (
 				CEE4929225D4ABFE00141D91 /* Preview Assets.xcassets in Resources */,
 				CEE4928F25D4ABFE00141D91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE492E125D4CBB700141D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE492EA25D4CBB900141D91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +266,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE492DF25D4CBB700141D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7982C225D4CE1A00098325 /* BatteryEntry.swift in Sources */,
+				CEE492E825D4CBB700141D91 /* BatteryXDWidget.swift in Sources */,
+				CE7982D425D4CE2F00098325 /* BatteryRingView.swift in Sources */,
+				CE7982D525D4CE2F00098325 /* BatteryFaceView.swift in Sources */,
+				CE7982C725D4CE2300098325 /* BatteryXDWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE492ED25D4CBB900141D91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE492E225D4CBB700141D91 /* BatteryXDWidgetExtension */;
+			targetProxy = CEE492EC25D4CBB900141D91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CEE4929425D4ABFE00141D91 /* Debug */ = {
@@ -281,6 +408,7 @@
 		CEE4929725D4ABFE00141D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BatteryXD/BatteryXD.entitlements;
@@ -305,6 +433,7 @@
 		CEE4929825D4ABFE00141D91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BatteryXD/BatteryXD.entitlements;
@@ -320,6 +449,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEE492F025D4CBB900141D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BatteryXDWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = BatteryXDWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.BatteryXDWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEE492F125D4CBB900141D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BatteryXDWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = BatteryXDWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.BatteryXDWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,6 +518,15 @@
 			buildConfigurations = (
 				CEE4929725D4ABFE00141D91 /* Debug */,
 				CEE4929825D4ABFE00141D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE492EF25D4CBB900141D91 /* Build configuration list for PBXNativeTarget "BatteryXDWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE492F025D4CBB900141D91 /* Debug */,
+				CEE492F125D4CBB900141D91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -21,32 +21,6 @@ struct ContentView: View {
 }
 
 
-
-struct BatteryFace: View {
-    var batteryLevel: Float
-    var batteryCharging: Bool
-    
-    var body: some View {
-        ZStack {
-            if batteryCharging || batteryLevel > 0.8 {
-                BatterySmileFace()
-            }
-            else if batteryLevel > 0.3 {
-                BatteryNormalFace()
-            }
-            else {
-                BatterySadFace()
-            }
-            
-            // Charging indicate
-            if batteryCharging {
-                ChargingMark()
-            }
-        }
-    }
-}
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
