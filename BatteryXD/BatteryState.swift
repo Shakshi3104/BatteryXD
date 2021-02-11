@@ -30,6 +30,9 @@ class BatteryState: ObservableObject {
         @unknown default:
             fatalError()
         }
+        
+        print("Init battery level: \(String(describing: batteryLevel))")
+        print("Init battery charging: \(String(describing: batteryCharging))")
     }
     
     private func getBatteryLevel() -> Float? {
@@ -44,6 +47,7 @@ class BatteryState: ObservableObject {
     }
     
     func startBatteryMonitoring() {
+        print("Start battery monitoring")
         UIDevice.current.isBatteryMonitoringEnabled = true
         
         // Observe battery level
@@ -60,8 +64,10 @@ class BatteryState: ObservableObject {
     }
     
     func stopBatteryMonitoring() {
+        print("Stop battery monitoring")
         UIDevice.current.isBatteryMonitoringEnabled = false
         
+        // Stop observing
         NotificationCenter.default.removeObserver(
            self,
            name: UIDevice.batteryLevelDidChangeNotification, object: nil)

@@ -13,6 +13,7 @@
 		CEE4929225D4ABFE00141D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4929125D4ABFE00141D91 /* Preview Assets.xcassets */; };
 		CEE4929C25D4AC3900141D91 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
 		CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929B25D4AC3800141D91 /* BatteryState.swift */; };
+		CEE492A225D4B11D00141D91 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryFaceView.swift; sourceTree = "<group>"; };
 		CEE4929B25D4AC3800141D91 /* BatteryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
 		CEE4929F25D4AC4B00141D91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CEE492A125D4B11D00141D91 /* BatteryRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				CEE4928E25D4ABFE00141D91 /* Assets.xcassets */,
 				CEE4929325D4ABFE00141D91 /* Info.plist */,
 				CEE4929025D4ABFE00141D91 /* Preview Content */,
+				CEE492A125D4B11D00141D91 /* BatteryRingView.swift */,
 			);
 			path = BatteryXD;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */,
 				CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */,
 				CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */,
+				CEE492A225D4B11D00141D91 /* BatteryRingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
