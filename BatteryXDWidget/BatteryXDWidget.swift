@@ -9,43 +9,35 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+    func placeholder(in context: Context) -> BatteryEntry {
+        BatteryEntry(date: Date())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+    func getSnapshot(in context: Context, completion: @escaping (BatteryEntry) -> ()) {
+        let entry = BatteryEntry(date: Date())
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
+        let entry = BatteryEntry(date: Date())
+        let refresh = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date()
+        let timeline = Timeline(entries: [entry], policy: .after(refresh))
         completion(timeline)
     }
 }
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-}
-
-struct BatteryXDWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        Text(entry.date, style: .time)
-            .foregroundColor(.primary)
-    }
-}
+//struct SimpleEntry: TimelineEntry {
+//    let date: Date
+//}
+//
+//struct BatteryXDWidgetEntryView : View {
+//    var entry: Provider.Entry
+//
+//    var body: some View {
+//        Text(entry.date, style: .time)
+//            .foregroundColor(.primary)
+//    }
+//}
 
 @main
 struct BatteryXDWidget: Widget {
@@ -53,16 +45,16 @@ struct BatteryXDWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            BatteryXDWidgetEntryView(entry: entry)
+            BatteryXDWidgetView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Battery XD")
+        .description("Cute battery widget •ᴗ•")
     }
 }
 
 struct BatteryXDWidget_Previews: PreviewProvider {
     static var previews: some View {
-        BatteryXDWidgetEntryView(entry: SimpleEntry(date: Date()))
+        BatteryXDWidgetView(entry: BatteryEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
