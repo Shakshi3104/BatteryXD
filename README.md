@@ -1,5 +1,9 @@
 # Battery XD
 
+<p align="center">
+  <img src="materials/AppIcon.png" height=64 />
+</p>
+
 Battery XD is like the default battery widget, but cute •ᴗ•
 
 The idea of this app was got from [Battery Buddy](https://batterybuddy.app) of [Neil Sardesai](https://twitter.com/neilsardesai/status/1358077388303831041).

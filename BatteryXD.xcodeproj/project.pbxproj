@@ -58,6 +58,7 @@
 		CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5194.PNG; sourceTree = "<group>"; };
 		CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5190.PNG; sourceTree = "<group>"; };
 		CE7982B825D4CCA300098325 /* BatteryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEntry.swift; sourceTree = "<group>"; };
+		CEACA1E625D6530C008E95F2 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDView.swift; sourceTree = "<group>"; };
 		CEE4928725D4ABFD00141D91 /* BatteryXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDApp.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		CE2ABDBE25D51A24006B36F2 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CEACA1E625D6530C008E95F2 /* AppIcon.png */,
 				CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */,
 				CE2ABDC125D51A8C006B36F2 /* IMG_5191.PNG */,
 				CE2ABDC025D51A8C006B36F2 /* IMG_5192.PNG */,
