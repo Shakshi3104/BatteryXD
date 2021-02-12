@@ -12,10 +12,8 @@ struct BatteryXDWidgetView: View {
     var entry: BatteryEntry
     
     var body: some View {
-        ZStack {
-            BatteryRing(batteryLevel: entry.batteryLevel)
-            BatteryFace(batteryLevel: entry.batteryLevel, batteryCharging: entry.batteryCharging ?? false)
-        }.scaleEffect(0.8)
+        BatteryXDView(batteryLevel: entry.batteryLevel, batteryCharging: entry.batteryCharging ?? false)
+        .scaleEffect(0.8)
     }
 }
 

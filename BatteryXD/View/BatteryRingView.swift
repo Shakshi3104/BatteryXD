@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct BatteryRingView: View {
-    var body: some View {
-        ZStack {
-            BatteryRing(batteryLevel: 0.98)
-            ChargingMark()
-        }
-    }
-}
-
 struct BatteryRing: View {
     var batteryLevel: Float
     
@@ -53,10 +44,24 @@ struct ChargingMark: View {
     }
 }
 
+struct BatteryRingCharging: View {
+    var batteryLevel: Float
+    var batteryCharging: Bool
+    
+    var body: some View {
+        ZStack {
+            BatteryRing(batteryLevel: batteryLevel)
+            if batteryCharging {
+                ChargingMark()
+            }
+        }
+    }
+}
+
 struct BatteryRingView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            BatteryRingView()
+            BatteryRingCharging(batteryLevel: 0.8, batteryCharging: true)
         }
     }
 }

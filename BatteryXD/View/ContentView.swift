@@ -13,10 +13,7 @@ struct ContentView: View {
     @EnvironmentObject var batteryState: BatteryState
     
     var body: some View {
-            ZStack {
-                BatteryRing(batteryLevel: batteryState.batteryLevel ?? 0)
-                BatteryFace(batteryLevel: batteryState.batteryLevel ?? 0, batteryCharging: batteryState.batteryCharging ?? false)
-            }
+        BatteryXDView(batteryLevel: batteryState.batteryLevel ?? 0, batteryCharging: batteryState.batteryCharging ?? false)
     }
 }
 
