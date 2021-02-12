@@ -11,6 +11,8 @@
 		CE7982C725D4CE2300098325 /* BatteryXDWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */; };
 		CE7982D425D4CE2F00098325 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
 		CE7982D525D4CE2F00098325 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
+		CEDEBC0725D61DE900294D82 /* BatteryXDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */; };
+		CEDEBC0E25D61E8700294D82 /* BatteryXDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */; };
 		CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */; };
 		CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928C25D4ABFD00141D91 /* ContentView.swift */; };
 		CEE4928F25D4ABFE00141D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE4928E25D4ABFE00141D91 /* Assets.xcassets */; };
@@ -56,6 +58,7 @@
 		CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5194.PNG; sourceTree = "<group>"; };
 		CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5190.PNG; sourceTree = "<group>"; };
 		CE7982B825D4CCA300098325 /* BatteryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEntry.swift; sourceTree = "<group>"; };
+		CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDView.swift; sourceTree = "<group>"; };
 		CEE4928725D4ABFD00141D91 /* BatteryXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDApp.swift; sourceTree = "<group>"; };
 		CEE4928C25D4ABFD00141D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +112,41 @@
 			path = materials;
 			sourceTree = "<group>";
 		};
+		CEDEBC0225D61CB100294D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4928C25D4ABFD00141D91 /* ContentView.swift */,
+				CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */,
+				CEE492A125D4B11D00141D91 /* BatteryRingView.swift */,
+				CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDEBC0325D61CE700294D82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4929B25D4AC3800141D91 /* BatteryState.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CEDEBC0425D61DAC00294D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDEBC0525D61DB300294D82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE7982B825D4CCA300098325 /* BatteryEntry.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CEE4927E25D4ABFD00141D91 = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +172,10 @@
 		CEE4928925D4ABFD00141D91 /* BatteryXD */ = {
 			isa = PBXGroup;
 			children = (
-				CEE492A425D4C63900141D91 /* BatteryXD.entitlements */,
-				CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */,
-				CEE492A125D4B11D00141D91 /* BatteryRingView.swift */,
-				CEE4929B25D4AC3800141D91 /* BatteryState.swift */,
 				CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */,
-				CEE4928C25D4ABFD00141D91 /* ContentView.swift */,
+				CEDEBC0325D61CE700294D82 /* Data */,
+				CEDEBC0225D61CB100294D82 /* View */,
+				CEE492A425D4C63900141D91 /* BatteryXD.entitlements */,
 				CEE4928E25D4ABFE00141D91 /* Assets.xcassets */,
 				CEE4929325D4ABFE00141D91 /* Info.plist */,
 				CEE4929025D4ABFE00141D91 /* Preview Content */,
@@ -168,10 +204,10 @@
 			isa = PBXGroup;
 			children = (
 				CEE492E725D4CBB700141D91 /* BatteryXDWidget.swift */,
+				CEDEBC0525D61DB300294D82 /* Data */,
+				CEDEBC0425D61DAC00294D82 /* View */,
 				CEE492E925D4CBB900141D91 /* Assets.xcassets */,
 				CEE492EB25D4CBB900141D91 /* Info.plist */,
-				CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */,
-				CE7982B825D4CCA300098325 /* BatteryEntry.swift */,
 			);
 			path = BatteryXDWidget;
 			sourceTree = "<group>";
@@ -278,6 +314,7 @@
 			files = (
 				CEE4929C25D4AC3900141D91 /* BatteryFaceView.swift in Sources */,
 				CEE4929D25D4AC3900141D91 /* BatteryState.swift in Sources */,
+				CEDEBC0725D61DE900294D82 /* BatteryXDView.swift in Sources */,
 				CEE4928D25D4ABFD00141D91 /* ContentView.swift in Sources */,
 				CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */,
 				CEE492A225D4B11D00141D91 /* BatteryRingView.swift in Sources */,
@@ -290,6 +327,7 @@
 			files = (
 				CE7982C225D4CE1A00098325 /* BatteryEntry.swift in Sources */,
 				CEE492E825D4CBB700141D91 /* BatteryXDWidget.swift in Sources */,
+				CEDEBC0E25D61E8700294D82 /* BatteryXDView.swift in Sources */,
 				CE7982D425D4CE2F00098325 /* BatteryRingView.swift in Sources */,
 				CE7982D525D4CE2F00098325 /* BatteryFaceView.swift in Sources */,
 				CE7982C725D4CE2300098325 /* BatteryXDWidgetView.swift in Sources */,
@@ -443,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
