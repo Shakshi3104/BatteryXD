@@ -124,6 +124,7 @@
 		CE7B642C25D7884C0050E044 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		CE7B644525D788E40050E044 /* BatteryXDWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDWatchView.swift; sourceTree = "<group>"; };
 		CE7B644B25D789F30050E044 /* BatteryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
+		CE7B645125D7A2F50050E044 /* WatchAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatchAppIcon.png; sourceTree = "<group>"; };
 		CEACA1E625D6530C008E95F2 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDView.swift; sourceTree = "<group>"; };
 		CEE4928725D4ABFD00141D91 /* BatteryXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				CEACA1E625D6530C008E95F2 /* AppIcon.png */,
+				CE7B645125D7A2F50050E044 /* WatchAppIcon.png */,
 				CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */,
 				CE2ABDC125D51A8C006B36F2 /* IMG_5191.PNG */,
 				CE2ABDC025D51A8C006B36F2 /* IMG_5192.PNG */,
@@ -199,12 +201,11 @@
 		CE7B641B25D788490050E044 /* BatteryXDWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE7B645325D7A52A0050E044 /* Complications */,
+				CE7B645225D7A51A0050E044 /* Notification */,
 				CE7B644425D788B80050E044 /* Data */,
 				CE7B644325D788AF0050E044 /* View */,
 				CE7B641C25D788490050E044 /* BatteryXDApp.swift */,
-				CE7B642025D788490050E044 /* NotificationController.swift */,
-				CE7B642225D788490050E044 /* NotificationView.swift */,
-				CE7B642425D788490050E044 /* ComplicationController.swift */,
 				CE7B642625D7884C0050E044 /* Assets.xcassets */,
 				CE7B642B25D7884C0050E044 /* Info.plist */,
 				CE7B642C25D7884C0050E044 /* PushNotificationPayload.apns */,
@@ -236,6 +237,23 @@
 				CE7B644B25D789F30050E044 /* BatteryState.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		CE7B645225D7A51A0050E044 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B642025D788490050E044 /* NotificationController.swift */,
+				CE7B642225D788490050E044 /* NotificationView.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		CE7B645325D7A52A0050E044 /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B642425D788490050E044 /* ComplicationController.swift */,
+			);
+			name = Complications;
 			sourceTree = "<group>";
 		};
 		CEDEBC0225D61CB100294D82 /* View */ = {

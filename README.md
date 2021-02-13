@@ -19,6 +19,14 @@ Widgets refresh is not real-time. It will be updated approximately every 15 minu
 | :-----: |
 | ![](materials/IMG_5193.PNG) |
 
+## watchOS
+<p align="center">
+  <img src="materials/WatchAppIcon.png" height=64 />
+</p>
+
+
+
+
 ## Requirements
 - iOS 14.0+
 - macOS 11.0+
