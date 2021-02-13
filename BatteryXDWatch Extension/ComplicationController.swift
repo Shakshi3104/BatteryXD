@@ -6,15 +6,20 @@
 //
 
 import ClockKit
+import SwiftUI
 
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
+    
+    // BatteryState object
+    lazy var batteryState = BatteryState()
     
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "BatteryXD", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "BatteryXD",
+                                      supportedFamilies: [.graphicCircular])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -30,7 +35,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
         // Call the handler with the last entry date you can currently provide or nil if you can't support future timelines
-        handler(nil)
+        handler(Date().addingTimeInterval(24.0 * 60.0 * 60.0))
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
@@ -42,12 +47,23 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        handler(createTimelineEntry(forComplication: complication, date: Date()))
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries after the given date
-        handler(nil)
+        var entries = [CLKComplicationTimelineEntry]()
+        
+        let fiveMinutes = 5.0 * 60.0
+        
+        var current = date.addingTimeInterval(fiveMinutes)
+        let endDate = date.addingTimeInterval(24.0 * 60.0 * 60.0)
+        
+        while (current.compare(endDate) == .orderedAscending) && (entries.count < limit) {
+            entries.append(createTimelineEntry(forComplication: complication, date: current))
+            current = current.addingTimeInterval(fiveMinutes)
+        }
+        
+        handler(entries)
     }
 
     // MARK: - Sample Templates
@@ -55,5 +71,46 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)
+    }
+    
+    // MARK: - Battery XD Templates
+    
+    private func createGraphicCircularTemplate(forDate date: Date) -> CLKComplicationTemplate {
+        let batteryLevel = batteryState.batteryLevel
+        let batteryCharging = batteryState.batteryCharging
+        
+        let templete = CLKComplicationTemplateGraphicCircularClosedGaugeView(
+            gaugeProvider: CLKSimpleGaugeProvider(
+                style: .ring,
+                gaugeColor: .green,
+                fillFraction: batteryLevel),
+            label: BatteryXDComplicationView(batteryLevel: batteryLevel, batteryCharging: batteryCharging ?? false))
+        
+        return templete
+    }
+    
+    private func createTimelineEntry(forComplication complication: CLKComplication, date: Date) -> CLKComplicationTimelineEntry {
+        // get complication
+        let template = createGraphicCircularTemplate(forDate: date)
+        
+        return CLKComplicationTimelineEntry(date: date, complicationTemplate: template)
+    }
+}
+
+struct BatteryXDComplicationView: View {
+    var batteryLevel: Float
+    var batteryCharging: Bool
+    
+    var body: some View {
+        BatteryFace(batteryLevel: batteryLevel, batteryCharging: batteryCharging)
+            .scaleEffect(0.4)
+    }
+}
+
+struct ComplicationController_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            CLKComplicationTemplateGraphicCircularClosedGaugeView(gaugeProvider: CLKSimpleGaugeProvider(style: .ring, gaugeColor: .green, fillFraction: 0.8), label: BatteryXDComplicationView(batteryLevel: 0.8, batteryCharging: false)).previewContext()
+        }
     }
 }
