@@ -76,11 +76,20 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // The system displays the placeholder in the complication selector.
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        let templete = createGraphicCircularTemplate(forDate: Date())
+        let templete = createTemplate(forComplication: complication, date: Date())
         handler(templete)
     }
     
     // MARK: - Battery XD Templates
+    
+    private func createTemplate(forComplication complication: CLKComplication, date: Date) -> CLKComplicationTemplate? {
+        switch complication.family {
+        case .graphicCircular:
+            return createGraphicCircularTemplate(forDate: date)
+        default:
+            return nil
+        }
+    }
     
     private func createGraphicCircularTemplate(forDate date: Date) -> CLKComplicationTemplate {
         let batteryLevel = batteryState.batteryLevel
@@ -98,9 +107,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     private func createTimelineEntry(forComplication complication: CLKComplication, date: Date) -> CLKComplicationTimelineEntry {
         // get complication
-        let template = createGraphicCircularTemplate(forDate: date)
+        let template = createTemplate(forComplication: complication, date: date)
         
-        return CLKComplicationTimelineEntry(date: date, complicationTemplate: template)
+        return CLKComplicationTimelineEntry(date: date, complicationTemplate: template!)
     }
 }
 
