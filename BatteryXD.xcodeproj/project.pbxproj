@@ -11,6 +11,21 @@
 		CE7982C725D4CE2300098325 /* BatteryXDWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492F625D4CC0200141D91 /* BatteryXDWidgetView.swift */; };
 		CE7982D425D4CE2F00098325 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
 		CE7982D525D4CE2F00098325 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
+		CE7B641125D788480050E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B641025D788480050E044 /* Assets.xcassets */; };
+		CE7B641825D788490050E044 /* BatteryXDWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE7B641725D788490050E044 /* BatteryXDWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE7B641D25D788490050E044 /* BatteryXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B641C25D788490050E044 /* BatteryXDApp.swift */; };
+		CE7B641F25D788490050E044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B641E25D788490050E044 /* ContentView.swift */; };
+		CE7B642125D788490050E044 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B642025D788490050E044 /* NotificationController.swift */; };
+		CE7B642325D788490050E044 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B642225D788490050E044 /* NotificationView.swift */; };
+		CE7B642525D788490050E044 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B642425D788490050E044 /* ComplicationController.swift */; };
+		CE7B642725D7884C0050E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B642625D7884C0050E044 /* Assets.xcassets */; };
+		CE7B642A25D7884C0050E044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B642925D7884C0050E044 /* Preview Assets.xcassets */; };
+		CE7B642F25D7884C0050E044 /* BatteryXDWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE7B640E25D788410050E044 /* BatteryXDWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE7B643C25D7887F0050E044 /* BatteryFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4929A25D4AC3800141D91 /* BatteryFaceView.swift */; };
+		CE7B643D25D7887F0050E044 /* BatteryRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE492A125D4B11D00141D91 /* BatteryRingView.swift */; };
+		CE7B643E25D7887F0050E044 /* BatteryXDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */; };
+		CE7B644625D788E40050E044 /* BatteryXDWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B644525D788E40050E044 /* BatteryXDWatchView.swift */; };
+		CE7B644C25D789F30050E044 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B644B25D789F30050E044 /* BatteryState.swift */; };
 		CEDEBC0725D61DE900294D82 /* BatteryXDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */; };
 		CEDEBC0E25D61E8700294D82 /* BatteryXDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */; };
 		CEE4928B25D4ABFD00141D91 /* BatteryXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4928A25D4ABFD00141D91 /* BatteryXDApp.swift */; };
@@ -28,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE7B641925D788490050E044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE4927F25D4ABFD00141D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7B641625D788490050E044;
+			remoteInfo = "BatteryXDWatch Extension";
+		};
+		CE7B642D25D7884C0050E044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE4927F25D4ABFD00141D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7B640D25D788410050E044;
+			remoteInfo = BatteryXDWatch;
+		};
 		CEE492EC25D4CBB900141D91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE4927F25D4ABFD00141D91 /* Project object */;
@@ -38,6 +67,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CE7B643025D7884D0050E044 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE7B642F25D7884C0050E044 /* BatteryXDWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B643325D7884D0050E044 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE7B641825D788490050E044 /* BatteryXDWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE492C125D4CA9600141D91 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,6 +109,21 @@
 		CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5194.PNG; sourceTree = "<group>"; };
 		CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5190.PNG; sourceTree = "<group>"; };
 		CE7982B825D4CCA300098325 /* BatteryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEntry.swift; sourceTree = "<group>"; };
+		CE7B640E25D788410050E044 /* BatteryXDWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXDWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B641025D788480050E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7B641225D788480050E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7B641725D788490050E044 /* BatteryXDWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BatteryXDWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B641C25D788490050E044 /* BatteryXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDApp.swift; sourceTree = "<group>"; };
+		CE7B641E25D788490050E044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE7B642025D788490050E044 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CE7B642225D788490050E044 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CE7B642425D788490050E044 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CE7B642625D7884C0050E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7B642925D7884C0050E044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE7B642B25D7884C0050E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7B642C25D7884C0050E044 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CE7B644525D788E40050E044 /* BatteryXDWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDWatchView.swift; sourceTree = "<group>"; };
+		CE7B644B25D789F30050E044 /* BatteryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
 		CEACA1E625D6530C008E95F2 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		CEDEBC0625D61DE900294D82 /* BatteryXDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryXDView.swift; sourceTree = "<group>"; };
 		CEE4928725D4ABFD00141D91 /* BatteryXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +148,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE7B641425D788490050E044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE4928425D4ABFD00141D91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +185,57 @@
 				CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */,
 			);
 			path = materials;
+			sourceTree = "<group>";
+		};
+		CE7B640F25D788410050E044 /* BatteryXDWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B641025D788480050E044 /* Assets.xcassets */,
+				CE7B641225D788480050E044 /* Info.plist */,
+			);
+			path = BatteryXDWatch;
+			sourceTree = "<group>";
+		};
+		CE7B641B25D788490050E044 /* BatteryXDWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B644425D788B80050E044 /* Data */,
+				CE7B644325D788AF0050E044 /* View */,
+				CE7B641C25D788490050E044 /* BatteryXDApp.swift */,
+				CE7B642025D788490050E044 /* NotificationController.swift */,
+				CE7B642225D788490050E044 /* NotificationView.swift */,
+				CE7B642425D788490050E044 /* ComplicationController.swift */,
+				CE7B642625D7884C0050E044 /* Assets.xcassets */,
+				CE7B642B25D7884C0050E044 /* Info.plist */,
+				CE7B642C25D7884C0050E044 /* PushNotificationPayload.apns */,
+				CE7B642825D7884C0050E044 /* Preview Content */,
+			);
+			path = "BatteryXDWatch Extension";
+			sourceTree = "<group>";
+		};
+		CE7B642825D7884C0050E044 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B642925D7884C0050E044 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE7B644325D788AF0050E044 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B641E25D788490050E044 /* ContentView.swift */,
+				CE7B644525D788E40050E044 /* BatteryXDWatchView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CE7B644425D788B80050E044 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B644B25D789F30050E044 /* BatteryState.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		CEDEBC0225D61CB100294D82 /* View */ = {
@@ -157,6 +281,8 @@
 				CEE4929F25D4AC4B00141D91 /* README.md */,
 				CEE4928925D4ABFD00141D91 /* BatteryXD */,
 				CEE492E625D4CBB700141D91 /* BatteryXDWidget */,
+				CE7B640F25D788410050E044 /* BatteryXDWatch */,
+				CE7B641B25D788490050E044 /* BatteryXDWatch Extension */,
 				CEE492AC25D4CA9400141D91 /* Frameworks */,
 				CEE4928825D4ABFD00141D91 /* Products */,
 			);
@@ -167,6 +293,8 @@
 			children = (
 				CEE4928725D4ABFD00141D91 /* BatteryXD.app */,
 				CEE492E325D4CBB700141D91 /* BatteryXDWidgetExtension.appex */,
+				CE7B640E25D788410050E044 /* BatteryXDWatch.app */,
+				CE7B641725D788490050E044 /* BatteryXDWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +345,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE7B640D25D788410050E044 /* BatteryXDWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7B643725D7884D0050E044 /* Build configuration list for PBXNativeTarget "BatteryXDWatch" */;
+			buildPhases = (
+				CE7B640C25D788410050E044 /* Resources */,
+				CE7B643325D7884D0050E044 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7B641A25D788490050E044 /* PBXTargetDependency */,
+			);
+			name = BatteryXDWatch;
+			productName = BatteryXDWatch;
+			productReference = CE7B640E25D788410050E044 /* BatteryXDWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CE7B641625D788490050E044 /* BatteryXDWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7B643625D7884D0050E044 /* Build configuration list for PBXNativeTarget "BatteryXDWatch Extension" */;
+			buildPhases = (
+				CE7B641325D788490050E044 /* Sources */,
+				CE7B641425D788490050E044 /* Frameworks */,
+				CE7B641525D788490050E044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BatteryXDWatch Extension";
+			productName = "BatteryXDWatch Extension";
+			productReference = CE7B641725D788490050E044 /* BatteryXDWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		CEE4928625D4ABFD00141D91 /* BatteryXD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEE4929625D4ABFE00141D91 /* Build configuration list for PBXNativeTarget "BatteryXD" */;
@@ -225,11 +387,13 @@
 				CEE4928425D4ABFD00141D91 /* Frameworks */,
 				CEE4928525D4ABFD00141D91 /* Resources */,
 				CEE492C125D4CA9600141D91 /* Embed App Extensions */,
+				CE7B643025D7884D0050E044 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CEE492ED25D4CBB900141D91 /* PBXTargetDependency */,
+				CE7B642E25D7884C0050E044 /* PBXTargetDependency */,
 			);
 			name = BatteryXD;
 			productName = BatteryXD;
@@ -262,6 +426,12 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					CE7B640D25D788410050E044 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE7B641625D788490050E044 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					CEE4928625D4ABFD00141D91 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -285,11 +455,30 @@
 			targets = (
 				CEE4928625D4ABFD00141D91 /* BatteryXD */,
 				CEE492E225D4CBB700141D91 /* BatteryXDWidgetExtension */,
+				CE7B640D25D788410050E044 /* BatteryXDWatch */,
+				CE7B641625D788490050E044 /* BatteryXDWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE7B640C25D788410050E044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B641125D788480050E044 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B641525D788490050E044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B642A25D7884C0050E044 /* Preview Assets.xcassets in Resources */,
+				CE7B642725D7884C0050E044 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE4928525D4ABFD00141D91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +499,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE7B641325D788490050E044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B643E25D7887F0050E044 /* BatteryXDView.swift in Sources */,
+				CE7B642125D788490050E044 /* NotificationController.swift in Sources */,
+				CE7B641F25D788490050E044 /* ContentView.swift in Sources */,
+				CE7B644625D788E40050E044 /* BatteryXDWatchView.swift in Sources */,
+				CE7B642525D788490050E044 /* ComplicationController.swift in Sources */,
+				CE7B643C25D7887F0050E044 /* BatteryFaceView.swift in Sources */,
+				CE7B643D25D7887F0050E044 /* BatteryRingView.swift in Sources */,
+				CE7B641D25D788490050E044 /* BatteryXDApp.swift in Sources */,
+				CE7B642325D788490050E044 /* NotificationView.swift in Sources */,
+				CE7B644C25D789F30050E044 /* BatteryState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE4928325D4ABFD00141D91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +545,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE7B641A25D788490050E044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7B641625D788490050E044 /* BatteryXDWatch Extension */;
+			targetProxy = CE7B641925D788490050E044 /* PBXContainerItemProxy */;
+		};
+		CE7B642E25D7884C0050E044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7B640D25D788410050E044 /* BatteryXDWatch */;
+			targetProxy = CE7B642D25D7884C0050E044 /* PBXContainerItemProxy */;
+		};
 		CEE492ED25D4CBB900141D91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEE492E225D4CBB700141D91 /* BatteryXDWidgetExtension */;
@@ -347,6 +563,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CE7B643125D7884D0050E044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				IBSC_MODULE = BatteryXDWatch_Extension;
+				INFOPLIST_FILE = BatteryXDWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CE7B643225D7884D0050E044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				IBSC_MODULE = BatteryXDWatch_Extension;
+				INFOPLIST_FILE = BatteryXDWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		CE7B643425D7884D0050E044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryXDWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BatteryXDWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		CE7B643525D7884D0050E044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryXDWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BatteryXDWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shakshi.BatteryXD.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		CEE4929425D4ABFE00141D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +868,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE7B643625D7884D0050E044 /* Build configuration list for PBXNativeTarget "BatteryXDWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B643425D7884D0050E044 /* Debug */,
+				CE7B643525D7884D0050E044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7B643725D7884D0050E044 /* Build configuration list for PBXNativeTarget "BatteryXDWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B643125D7884D0050E044 /* Debug */,
+				CE7B643225D7884D0050E044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEE4928225D4ABFD00141D91 /* Build configuration list for PBXProject "BatteryXD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
