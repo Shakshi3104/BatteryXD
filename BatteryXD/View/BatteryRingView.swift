@@ -31,16 +31,11 @@ struct BatteryRing: View {
 
 struct ChargingMark: View {
     var body: some View {
-        GeometryReader { geometry in
-            HStack(alignment: .center) {
-                Image(systemName: "bolt.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .position(x: geometry.size.width / 2,
-                              y: geometry.size.height / 2 - 60)
-            }
-        }
+        Image(systemName: "bolt.fill")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 30, height: 30)
+            .offset(x: 0, y: -60)
     }
 }
 
