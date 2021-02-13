@@ -98,7 +98,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let templete = CLKComplicationTemplateGraphicCircularClosedGaugeView(
             gaugeProvider: CLKSimpleGaugeProvider(
                 style: .ring,
-                gaugeColor: .green,
+                gaugeColor: UIColor(Color.green),
                 fillFraction: batteryLevel),
             label: BatteryXDComplicationView(batteryLevel: batteryLevel, batteryCharging: batteryCharging ?? false))
         
@@ -127,7 +127,7 @@ struct BatteryXDComplicationView: View {
 struct ComplicationController_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CLKComplicationTemplateGraphicCircularClosedGaugeView(gaugeProvider: CLKSimpleGaugeProvider(style: .ring, gaugeColor: .green, fillFraction: 0.8), label: BatteryXDComplicationView(batteryLevel: 0.8, batteryCharging: false)).previewContext()
+            CLKComplicationTemplateGraphicCircularClosedGaugeView(gaugeProvider: CLKSimpleGaugeProvider(style: .ring, gaugeColor: UIColor(Color.green), fillFraction: 0.8), label: BatteryXDComplicationView(batteryLevel: 0.8, batteryCharging: false)).previewContext()
         }
     }
 }
