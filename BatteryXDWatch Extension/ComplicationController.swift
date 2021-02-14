@@ -36,7 +36,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // Define how far into the future the app can provide data.
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
         // Call the handler with the last entry date you can currently provide or nil if you can't support future timelines
-        handler(Date().addingTimeInterval(24.0 * 60.0 * 60.0))
+//        handler(Date().addingTimeInterval(24.0 * 60.0 * 60.0))
+        handler(nil)
     }
     
     // Define whether the complication is visible when the watch is unlocked.
@@ -56,19 +57,20 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // Return future timeline entries.
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        var entries = [CLKComplicationTimelineEntry]()
-        
-        let fiveMinutes = 5.0 * 60.0
-        
-        var current = date.addingTimeInterval(fiveMinutes)
-        let endDate = date.addingTimeInterval(24.0 * 60.0 * 60.0)
-        
-        while (current.compare(endDate) == .orderedAscending) && (entries.count < limit) {
-            entries.append(createTimelineEntry(forComplication: complication, date: current))
-            current = current.addingTimeInterval(fiveMinutes)
-        }
-        
-        handler(entries)
+//        var entries = [CLKComplicationTimelineEntry]()
+//
+//        let fiveMinutes = 5.0 * 60.0
+//
+//        var current = date.addingTimeInterval(fiveMinutes)
+//        let endDate = date.addingTimeInterval(24.0 * 60.0 * 60.0)
+//
+//        while (current.compare(endDate) == .orderedAscending) && (entries.count < limit) {
+//            entries.append(createTimelineEntry(forComplication: complication, date: current))
+//            current = current.addingTimeInterval(fiveMinutes)
+//        }
+//
+//        handler(entries)
+        handler(nil)
     }
 
     // MARK: - Placeholder Templates
