@@ -41,3 +41,9 @@ Widgets refresh is not real-time. It will be updated approximately every 15 minu
 - watchOS 7.0+
 - macOS 11.0+
 - Xcode 12.0+
+
+## To Do
+- [ ] bug fix in complications
+- [ ] add medium and large widgets
+- [ ] add iPhone battery XD on Apple Watch
+- [ ] add some features on iOS app
