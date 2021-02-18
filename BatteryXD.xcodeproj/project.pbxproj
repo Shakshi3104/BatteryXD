@@ -103,11 +103,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE2ABDBF25D51A8C006B36F2 /* IMG_5193.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5193.PNG; sourceTree = "<group>"; };
-		CE2ABDC025D51A8C006B36F2 /* IMG_5192.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5192.PNG; sourceTree = "<group>"; };
-		CE2ABDC125D51A8C006B36F2 /* IMG_5191.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5191.PNG; sourceTree = "<group>"; };
-		CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5194.PNG; sourceTree = "<group>"; };
-		CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_5190.PNG; sourceTree = "<group>"; };
+		CE2ABDBF25D51A8C006B36F2 /* widget-small.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widget-small.PNG"; sourceTree = "<group>"; };
+		CE2ABDC025D51A8C006B36F2 /* sad-face.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sad-face.PNG"; sourceTree = "<group>"; };
+		CE2ABDC125D51A8C006B36F2 /* charging.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charging.PNG; sourceTree = "<group>"; };
+		CE2ABDC225D51A8C006B36F2 /* smile-face.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smile-face.PNG"; sourceTree = "<group>"; };
+		CE5726AC25DE16DC001DBE50 /* watch-charging.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-charging.PNG"; sourceTree = "<group>"; };
+		CE5726AD25DE16DD001DBE50 /* complications-3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "complications-3.PNG"; sourceTree = "<group>"; };
+		CE5726AE25DE16DE001DBE50 /* complications-1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "complications-1.PNG"; sourceTree = "<group>"; };
+		CE5726AF25DE16DF001DBE50 /* watch-normal-face.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-normal-face.PNG"; sourceTree = "<group>"; };
+		CE5726B025DE16DF001DBE50 /* complications-2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "complications-2.PNG"; sourceTree = "<group>"; };
+		CE5726B125DE16DF001DBE50 /* watch-smile-face.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-smile-face.PNG"; sourceTree = "<group>"; };
+		CE5726B225DE16E0001DBE50 /* normal-face.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal-face.PNG"; sourceTree = "<group>"; };
+		CE5726B325DE16E0001DBE50 /* watch-sad-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-sad-face.png"; sourceTree = "<group>"; };
 		CE7982B825D4CCA300098325 /* BatteryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEntry.swift; sourceTree = "<group>"; };
 		CE7B640E25D788410050E044 /* BatteryXDWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryXDWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B641025D788480050E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,13 +185,20 @@
 		CE2ABDBE25D51A24006B36F2 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				CE5726AE25DE16DE001DBE50 /* complications-1.PNG */,
+				CE5726B025DE16DF001DBE50 /* complications-2.PNG */,
+				CE5726AD25DE16DD001DBE50 /* complications-3.PNG */,
+				CE5726B225DE16E0001DBE50 /* normal-face.PNG */,
+				CE5726AC25DE16DC001DBE50 /* watch-charging.PNG */,
+				CE5726AF25DE16DF001DBE50 /* watch-normal-face.PNG */,
+				CE5726B325DE16E0001DBE50 /* watch-sad-face.png */,
+				CE5726B125DE16DF001DBE50 /* watch-smile-face.PNG */,
 				CEACA1E625D6530C008E95F2 /* AppIcon.png */,
 				CE7B645125D7A2F50050E044 /* WatchAppIcon.png */,
-				CE2ABDC325D51A8C006B36F2 /* IMG_5190.PNG */,
-				CE2ABDC125D51A8C006B36F2 /* IMG_5191.PNG */,
-				CE2ABDC025D51A8C006B36F2 /* IMG_5192.PNG */,
-				CE2ABDBF25D51A8C006B36F2 /* IMG_5193.PNG */,
-				CE2ABDC225D51A8C006B36F2 /* IMG_5194.PNG */,
+				CE2ABDC125D51A8C006B36F2 /* charging.PNG */,
+				CE2ABDC025D51A8C006B36F2 /* sad-face.PNG */,
+				CE2ABDBF25D51A8C006B36F2 /* widget-small.PNG */,
+				CE2ABDC225D51A8C006B36F2 /* smile-face.PNG */,
 			);
 			path = materials;
 			sourceTree = "<group>";
