@@ -46,6 +46,7 @@ struct BatteryRing: View {
                 .offset(y: -60)
                 .foregroundColor(batteryLevel > 0.95 ? Color.green : Color.green.opacity(0))
                 .rotationEffect(Angle.degrees(360 * Double(batteryLevel)))
+                .animation(.linear)
                 
         }.frame(width: 120, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
